@@ -1,0 +1,29 @@
+@keyframes green-border {
+    0% {
+      box-shadow: none;
+    }
+    1%{
+        box-shadow: 0 0 0 3px #23A559;
+    }
+    49%{
+        box-shadow: 0 0 0 3px #23A559;
+    }
+    50% {
+        box-shadow: none;
+    }
+    100% {
+        box-shadow: none;
+    }
+}
+
+@keyframes mic {
+    0% {
+        background: url("@img/icons/Icon_mic2.svg") no-repeat right;
+    }
+    49% {
+        background: url("@img/icons/Icon_mic2.svg") no-repeat right;
+    }
+    50% {
+        background: url("@img/icons/Icon_mic2.svg") no-repeat right/0px;
+    }
+}

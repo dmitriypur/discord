@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('html/_head.htm',{
+	"title":"Главная"
+	})
+	<body>
+		<div class="wrapper">
+			@@include('html/_header.htm',{})
+			<section class="hero">
+				<div class="hero__container">
+					<div class="hero__inner">
+						<div class="hero__left">
+							<h1 class="hero__title">
+								<span class="hero__title-top">Групповые чаты</span>
+								Discord
+								<span class="hero__title-bottom">— это новый уровень общения</span>
+							</h1>
+							<p class="hero__subtitle">
+								Удобная платформа для общения, игр и творчества. Присоединяйтесь к миллионам пользователей по всему миру и исследуйте новые возможности онлайн-общения.
+							</p>
+							<button type="button" class="btn btn-icon btn-white">
+								<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M11.0625 11.6875H22V2L11.0625 3.57257V11.6875Z" fill="#23272A"/>
+									<path d="M10.4375 11.6875V3.5625L2 4.78064V11.6875H10.4375Z" fill="#23272A"/>
+									<path d="M10.4375 12.3125H2V19.2647L10.4375 20.4375V12.3125Z" fill="#23272A"/>
+									<path d="M11.0625 12.3125V20.4672L22 22V12.3125H11.0625Z" fill="#23272A"/>
+								</svg>
+								Скачать для Windows
+							</button>
+							<p class="hero__text">Совместим с Windows 7 и выше</p>
+						</div>
+						<div class="hero__right">
+							<img src="@img/hero-img.svg" alt="">
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="info" id="info">
+				<div class="info__container">
+					<h2 class="section__title">Информация о программе</h2>
+					<div class="info__row">
+						<div class="info__col">
+							<div class="info__col-header">
+								<h3>Место для общения</h3>
+								<p>Создавайте чаты и приглашайте друзей для общения на любые темы.</p>
+							</div>
+							
+							<div class="card">
+								<div class="card__inner">
+									<div class="card__inner-left">
+										<div class="discord grey__round">
+											<img src="@img/icons/discord.svg" alt="">
+										</div>
+										<ul class="chat">
+											<li class="chat__item grey__round">
+												<img src="@img/chat-1.png" alt="">
+											</li>
+											<li class="chat__item grey__round">
+												<img src="@img/chat-2.png" alt="">
+											</li>
+											<li class="chat__item grey__round add">
+												<img src="@img/icons/add.svg" alt="">
+											</li>
+											<li class="chat__item grey__round server">
+												<img src="@img/icons/server.svg" alt="">
+											</li>
+										</ul>
+									</div>
+									<div class="card__inner-right place">
+										<div class="top">
+											<p>The Crew</p>
+											<img src="@img/icons/card-arrow-big.svg" alt="">
+										</div>
+										<div class="chanels">
+											<div class="spollers">
+												<div class="spollers__item">
+													<button type="button" class="spollers__title _spoller-active">
+														Text channels
+													</button>
+													<div class="spollers__body">
+														<ul class="text__channels">
+															<li>gaming</li>
+															<li class="active">global</li>
+														</ul>
+													</div>
+												</div>
+												<div class="spollers__item">
+													<button type="button" class="spollers__title _spoller-active">
+														Voice channels
+													</button>
+													<div class="spollers__body">
+														<ul class="voice__channels">
+															<li>
+																<div>
+																	<p>vc-general</p>
+																	<div class="buttons">
+																		<button type="button">
+																			<img src="@img/icons/comment.svg" alt="">
+																		</button>
+																		<button type="button">
+																			<img src="@img/icons/add-user.svg" alt="">
+																		</button>
+																	</div>
+																	
+																</div>
+																<ul class="childs">
+																	<li>
+																		<img src="@img/users/user-1.svg" alt="">
+																		<p>Smirnov Alex</p>
+																	</li>
+																	<li>
+																		<img src="@img/users/user-2.svg" alt="">
+																		<p>Korchagina Svetlana</p>
+																	</li>
+																	<li>
+																		<img src="@img/users/user-3.svg" alt="">
+																		<p>Kirill</p>
+																	</li>
+																</ul>
+															</li>
+														</ul>
+														
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="info__col">
+							<div class="info__col-header">
+								<h3>Деловое общение</h3>
+								<p>Используйте платформу для общения с&nbsp;командой и&nbsp;обсуждения рабочих вопросов.</p>
+							</div>
+							<div class="card">
+								<div class="card__inner">
+									<div class="card__inner-right business">
+										<div class="top">
+											<p><span>#</span>global</p>
+											<img src="@img/icons/Icon_search.svg" alt="">
+										</div>
+										<ul class="business__chat">
+											<li class="business__chat-item">
+												<ul class="icons">
+													<li><img src="@img/icons/Icon_smile.svg" alt=""></li>
+													<li><img src="@img/icons/Icon_arrow-back.svg" alt=""></li>
+													<li><img src="@img/icons/Icon_more.svg" alt=""></li>
+													<li><img src="@img/icons/Icon_threads.svg" alt=""></li>
+												</ul>
+												<div class="avatar">
+													<img src="@img/users/user-1.svg" alt="">
+												</div>
+												<div class="content">
+													<div class="content__top">
+														<p class="name">Kirill</p>
+														<p class="date">Сегодня, в 12:50</p>
+													</div>
+													<p class="message">У кого‑нибудь есть записи по вчерашнему семинару?</p>
+												</div>
+											</li>
+											<li class="business__chat-item">
+												<ul class="icons">
+													<li><img src="@img/icons/Icon_smile.svg" alt=""></li>
+													<li><img src="@img/icons/Icon_arrow-back.svg" alt=""></li>
+													<li><img src="@img/icons/Icon_more.svg" alt=""></li>
+													<li><img src="@img/icons/Icon_threads.svg" alt=""></li>
+												</ul>
+												<div class="avatar">
+													<img src="@img/users/user-2.svg" alt="">
+												</div>
+												<div class="content">
+													<div class="content__top">
+														<p class="name">Victoria</p>
+														<p class="date">Сегодня, в 12:55</p>
+													</div>
+													<p class="message">Мне тоже нужны</p>
+												</div>
+											</li>
+											<li class="business__chat-item">
+												<ul class="icons">
+													<li><img src="@img/icons/Icon_smile.svg" alt=""></li>
+													<li><img src="@img/icons/Icon_arrow-back.svg" alt=""></li>
+													<li><img src="@img/icons/Icon_more.svg" alt=""></li>
+													<li><img src="@img/icons/Icon_threads.svg" alt=""></li>
+												</ul>
+												<div class="avatar">
+													<img src="@img/users/user-3.svg" alt="">
+												</div>
+												<div class="content">
+													<div class="content__top">
+														<p class="name">Smirnov Alex</p>
+														<p class="date">Сегодня, в 12:57</p>
+													</div>
+													<p class="message">Пришлите и мне пожалуйста</p>
+												</div>
+											</li>
+											<li class="business__chat-item">
+												<ul class="icons">
+													<li><img src="@img/icons/Icon_smile.svg" alt=""></li>
+													<li><img src="@img/icons/Icon_arrow-back.svg" alt=""></li>
+													<li><img src="@img/icons/Icon_more.svg" alt=""></li>
+													<li><img src="@img/icons/Icon_threads.svg" alt=""></li>
+												</ul>
+												<div class="avatar">
+													<img src="@img/users/user-4.svg" alt="">
+												</div>
+												<div class="content">
+													<div class="content__top">
+														<p class="name">Korchagina Svetlana</p>
+														<p class="date">Сегодня, в 13:10</p>
+													</div>
+													<p class="message">У меня есть, смогу прислать ближе к вечеру</p>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="info__col horizontal">
+							<div class="info__col-header">
+								<h3>Групповые игры</h3>
+								<p>Организуйте и участвуйте в игровых сессиях с&nbsp;друзьями и&nbsp;сообществами.</p>
+							</div>
+							<div class="card">
+								<div class="video__box">
+									<iframe width="560" height="315" src="https://www.youtube.com/embed/wtdLpWobBww?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+									<span class="name">Oleg</span>
+								</div>
+								<ul class="thumbnails">
+									<li class="item">
+										<img src="@img/users/user-1.svg" alt="" class="avatar">
+										<span class="name">Victoria</span>
+									</li>
+									<li class="item active">
+										<div class="badge">Live</div>
+										<img src="@img/gamer-2.png" alt="">
+										<img src="@img/icons/Icon_cursor.svg" alt="" class="cursor">
+										<span class="name">Oleg</span>
+									</li>
+									<li class="item">
+										<img src="@img/users/user-2.svg" alt="" class="avatar">
+										<span class="name">Kirill</span>
+									</li>
+								</ul>
+							</div>
+							<img src="@img/blue-creature.svg" alt="" class="blue-creature">
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="functions">
+				<div class="functions__wrap">
+					<h2 class="section__title">Основные функции и преимущества</h2>
+					<ul class="functions__list">
+						<li class="functions__item">
+							<h3 class="functions__item-title">Группы и сообщества</h3>
+							<ul class="functions__item-content">
+								<li>Создавайте чаты и группы для обсуждения проектов, игр, творчества и работы.</li>
+								<li>Делитесь идеями, файлами и документами, организуйте беседы по интересам.</li>
+							</ul>
+							<img src="@img/icons/Icon_team.svg" alt="" class="functions__item-icon">
+						</li>
+						<li class="functions__item">
+							<h3 class="functions__item-title title__replace">Безопасность и конфиденциальность</h3>
+							<ul class="functions__item-content">
+								<li>Наслаждайтесь безопасной средой для общения, творчества и работы.</li>
+								<li>Используйте шифрование и управление доступом для защиты ваших данных.</li>
+							</ul>
+							<img src="@img/icons/Icon_shield.svg" alt="" class="functions__item-icon">
+						</li>
+						<li class="functions__item item__hidden">
+							<img src="@img/butterfly.svg" alt="butterfly">
+						</li>
+						<li class="functions__item">
+							<h3 class="functions__item-title">Совместная работа и управление проектами</h3>
+							<ul class="functions__item-content">
+								<li>Используйте инструменты для совместного редактирования документов и управления задачами.</li>
+								<li>Назначайте задачи, отслеживайте их выполнение и делитесь статусом проекта в реальном времени.</li>
+							</ul>
+							<img src="@img/icons/Icon_edit.svg" alt="" class="functions__item-icon">
+						</li>
+						<li class="functions__item">
+							<h3 class="functions__item-title">Голосовые и видеозвонки</h3>
+							<ul class="functions__item-content">
+								<li>Проводите голосовые и видеоконференции для общения, обсуждения рабочих вопросов и игровых сессий.</li>
+								<li>Организуйте виртуальные встречи, брейнштормы и стримы.</li>
+							</ul>
+							<img src="@img/icons/Icon_mic.svg" alt="" class="functions__item-icon">
+						</li>
+						<li class="functions__item">
+							<h3 class="functions__item-title">Уведомления и напоминания</h3>
+							<ul class="functions__item-content">
+								<li>Настраивайте уведомления для важных сообщений, игровых событий и рабочих задач.</li>
+								<li>Используйте напоминания для своевременного выполнения задач и соблюдения сроков.</li>
+							</ul>
+							<img src="@img/icons/Icon_notification.svg" alt="" class="functions__item-icon">
+						</li>
+						<li class="functions__item item__hidden">
+							
+						</li>
+						<li class="functions__item">
+							<h3 class="functions__item-title">Обмен файлами и ресурсами</h3>
+							<ul class="functions__item-content">
+								<li>Легко делитесь файлами, изображениями и документами с коллегами, друзьями и командой.</li>
+								<li>Организуйте ресурсы в общих папках для удобного доступа.</li>
+							</ul>
+							<img src="@img/icons/Icon_share-1.svg" alt="" class="functions__item-icon">
+						</li>
+						<li class="functions__item">
+							<h3 class="functions__item-title">Интеграции с сервисами</h3>
+							<ul class="functions__item-content">
+								<li>Интегрируйте платформу с популярными инструментами и сервисами, такими как Google Drive, Trello и игровые платформы.</li>
+								<li>Повышайте продуктивность, используя все необходимые инструменты в одном месте.</li>
+							</ul>
+							<img src="@img/icons/Icon_community.svg" alt="" class="functions__item-icon">
+						</li>
+					</ul>
+					<button type="button" class="btn btn-icon btn-blue">
+						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M11.0625 11.6875H22V2L11.0625 3.57257V11.6875Z" fill="#23272A"/>
+							<path d="M10.4375 11.6875V3.5625L2 4.78064V11.6875H10.4375Z" fill="#23272A"/>
+							<path d="M10.4375 12.3125H2V19.2647L10.4375 20.4375V12.3125Z" fill="#23272A"/>
+							<path d="M11.0625 12.3125V20.4672L22 22V12.3125H11.0625Z" fill="#23272A"/>
+						</svg>
+						Скачать для Windows
+					</button>
+					<img src="@img/girl.svg" alt="butterfly" class="girl-pic">
+				</div>
+			</section>
+
+			<section class="install">
+				<h2 class="section__title">Доступно на всех ваших устройствах</h2>
+				<div class="install__slider swiper-devices">
+					<div class="install__wrapper swiper-wrapper">
+						<div class="install__slide swiper-slide">
+							<img src="@img/devices/logo_android.svg" alt="">
+						</div>
+						<div class="install__slide swiper-slide">
+							<img src="@img/devices/logo_ios.svg" alt="">
+						</div>
+						<div class="install__slide swiper-slide">
+							<img src="@img/devices/logo_linux.svg" alt="">
+						</div>
+						<div class="install__slide swiper-slide">
+							<img src="@img/devices/logo_macos.svg" alt="">
+						</div>
+						<div class="install__slide swiper-slide">
+							<img src="@img/devices/logo_windows.svg" alt="">
+						</div>
+						<div class="install__slide swiper-slide">
+							<img src="@img/devices/logo_playstation-4.svg" alt="">
+						</div>
+						<div class="install__slide swiper-slide">
+							<img src="@img/devices/logo_playstation-5.svg" alt="">
+						</div>
+						<div class="install__slide swiper-slide">
+							<img src="@img/devices/logo_android.svg" alt="">
+						</div>
+						<div class="install__slide swiper-slide">
+							<img src="@img/devices/logo_ios.svg" alt="">
+						</div>
+						<div class="install__slide swiper-slide">
+							<img src="@img/devices/logo_linux.svg" alt="">
+						</div>
+						<div class="install__slide swiper-slide">
+							<img src="@img/devices/logo_macos.svg" alt="">
+						</div>
+						<div class="install__slide swiper-slide">
+							<img src="@img/devices/logo_windows.svg" alt="">
+						</div>
+						<div class="install__slide swiper-slide">
+							<img src="@img/devices/logo_playstation-4.svg" alt="">
+						</div>
+						<div class="install__slide swiper-slide">
+							<img src="@img/devices/logo_playstation-5.svg" alt="">
+						</div>
+					</div>
+				</div>
+				<h2 class="section__title">Лёгкая установка за несколько шагов</h2>
+				<div class="install__video">
+					<div class="video__box">
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/wtdLpWobBww?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+						<span class="name">Oleg</span>
+					</div>
+				</div>
+			</section>
+
+			<section class="faq" id="faq">
+				<div class="faq__container">
+					<h2 class="section__title">Часто задаваемые вопросы</h2>
+					
+							<div data-spollers data-one-spoller class="spollers">
+								<div class="faq__row">
+									<div class="faq__col">
+										<div class="spollers__item with__border">
+											<button type="button" data-spoller class="spollers__title">Как установить приложение на мой компьютер?</button>
+											<div class="spollers__body">Зайдите на наш сайт, выберите нужную платформу (Windows, macOS или Linux) и скачайте установочный файл. Затем следуйте инструкциям по установке.</div>
+										</div>
+										<div class="spollers__item with__border">
+											<button type="button" data-spoller class="spollers__title">Могу ли я использовать приложение на нескольких устройствах одновременно?</button>
+											<div class="spollers__body">Зайдите на наш сайт, выберите нужную платформу (Windows, macOS или Linux) и скачайте установочный файл. Затем следуйте инструкциям по установке.</div>
+										</div>
+										<div class="spollers__item with__border">
+											<button type="button" data-spoller class="spollers__title">Требуется ли мне оплачивать приложение?</button>
+											<div class="spollers__body">Зайдите на наш сайт, выберите нужную платформу (Windows, macOS или Linux) и скачайте установочный файл. Затем следуйте инструкциям по установке.</div>
+										</div>
+										<div class="spollers__item">
+											<button type="button" data-spoller class="spollers__title">Поддерживает ли ваше приложение интеграцию с другими сервисами?</button>
+											<div class="spollers__body">Зайдите на наш сайт, выберите нужную платформу (Windows, macOS или Linux) и скачайте установочный файл. Затем следуйте инструкциям по установке.</div>
+										</div>
+									</div>
+									<div class="faq__col">
+										<div class="spollers__item with__border">
+											<button type="button" data-spoller class="spollers__title">Как обновить приложение до последней версии?</button>
+											<div class="spollers__body">Зайдите на наш сайт, выберите нужную платформу (Windows, macOS или Linux) и скачайте установочный файл. Затем следуйте инструкциям по установке.</div>
+										</div>
+										<div class="spollers__item with__border">
+											<button type="button" data-spoller class="spollers__title">Могу ли я настроить уведомления в приложении?</button>
+											<div class="spollers__body">Зайдите на наш сайт, выберите нужную платформу (Windows, macOS или Linux) и скачайте установочный файл. Затем следуйте инструкциям по установке.</div>
+										</div>
+										<div class="spollers__item with__border">
+											<button type="button" data-spoller class="spollers__title">Как защитить свои данные в приложении?</button>
+											<div class="spollers__body">Зайдите на наш сайт, выберите нужную платформу (Windows, macOS или Linux) и скачайте установочный файл. Затем следуйте инструкциям по установке.</div>
+										</div>
+										<div class="spollers__item with__border">
+											<button type="button" data-spoller class="spollers__title">Есть ли у вас мобильная версия приложения?</button>
+											<div class="spollers__body">Зайдите на наш сайт, выберите нужную платформу (Windows, macOS или Linux) и скачайте установочный файл. Затем следуйте инструкциям по установке.</div>
+										</div>
+										<div class="spollers__item">
+											<button type="button" data-spoller class="spollers__title">Как получить помощь по работе с приложением?</button>
+											<div class="spollers__body">Зайдите на наш сайт, выберите нужную платформу (Windows, macOS или Linux) и скачайте установочный файл. Затем следуйте инструкциям по установке.</div>
+										</div>
+									</div>
+								</div>
+							</div>
+					
+				</div>
+			</section>
+			
+			<section class="reviews" id="reviews">
+				<div class="reviews__container">
+					<h2 class="section__title">Отзывы</h2>
+					<div class="reviews__inner">
+						<div class="reviews__slider swiper">
+							<div class="reviews__wrapper swiper-wrapper">
+								<div class="reviews__slide swiper-slide">
+									<div class="reviews__slide-top">
+										<img src="@img/users/user-1.svg" alt="" class="avatar">
+										<p class="name">Кисик</p>
+									</div>
+									<div class="message">Дискорд — это как кот, который подкармливает тебя вдохновением и дружбой. Мур-мур!</div>
+								</div>
+								<div class="reviews__slide swiper-slide">
+									<div class="reviews__slide-top">
+										<img src="@img/users/user-1.svg" alt="" class="avatar">
+										<p class="name">Миша</p>
+									</div>
+									<div class="message">Дискорд помогает моей команде работать вместе без проблем. Очень удобно, особенно для проектов и игр.</div>
+								</div>
+								<div class="reviews__slide swiper-slide">
+									<div class="reviews__slide-top">
+										<img src="@img/users/user-1.svg" alt="" class="avatar">
+										<p class="name">Вася</p>
+									</div>
+									<div class="message">Когда мой друг спросил, какие у меня планы на выходные, я ответил: «Встречаюсь с моими друзьями на Дискорде». Он подумал, что это новый клуб. Ну, в каком‑то смысле, он и прав XD</div>
+								</div>
+								<div class="reviews__slide swiper-slide">
+									<div class="reviews__slide-top">
+										<img src="@img/users/user-1.svg" alt="" class="avatar">
+										<p class="name">Кисик</p>
+									</div>
+									<div class="message">Дискорд — это как кот, который подкармливает тебя вдохновением и дружбой. Мур-мур!</div>
+								</div>
+								<div class="reviews__slide swiper-slide">
+									<div class="reviews__slide-top">
+										<img src="@img/users/user-1.svg" alt="" class="avatar">
+										<p class="name">Миша</p>
+									</div>
+									<div class="message">Дискорд помогает моей команде работать вместе без проблем. Очень удобно, особенно для проектов и игр.</div>
+								</div>
+								<div class="reviews__slide swiper-slide">
+									<div class="reviews__slide-top">
+										<img src="@img/users/user-1.svg" alt="" class="avatar">
+										<p class="name">Вася</p>
+									</div>
+									<div class="message">Когда мой друг спросил, какие у меня планы на выходные, я ответил: «Встречаюсь с моими друзьями на Дискорде». Он подумал, что это новый клуб. Ну, в каком‑то смысле, он и прав XD</div>
+								</div>
+							</div>
+							<div class="swiper__buttons">
+								<button type="button" class="swiper__button swiper__button-prev">
+									<svg width="8.480469" height="14.839355" viewBox="0 0 8.48047 14.8394" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+										<defs/>
+										<path id="Vector" d="M0.75 0.75L7.41 7.41L0.75 14.08" stroke="#23272A" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linecap="round"/>
+									</svg>
+								</button>
+								<button type="button" class="swiper__button swiper__button-next">
+									<svg width="8.480469" height="14.839355" viewBox="0 0 8.48047 14.8394" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+										<defs/>
+										<path id="Vector" d="M0.75 0.75L7.41 7.41L0.75 14.08" stroke="#23272A" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linecap="round"/>
+									</svg>
+								</button>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</section>
+			@@include('html/_footer.htm',{})
+		</div>
+		@@include('html/_js.htm',{})
+	</body>
+</html>

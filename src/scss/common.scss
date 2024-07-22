@@ -1,0 +1,184 @@
+h1{
+    font-size: rem(40);
+    line-height: 120%;
+    font-weight: 900;
+}
+h2{
+    font-size: rem(32);
+    line-height: 120%;
+    font-weight: 900;
+}
+
+h3{
+    font-size: rem(24);
+    line-height: 130%;
+    font-weight: 800;
+}
+h4{
+    font-size: rem(20);
+    line-height: 130%;
+    font-weight: 800;
+}
+h5{
+    font-size: rem(20);
+    line-height: 120%;
+    font-weight: 900;
+}
+
+
+
+@media (max-width: $mobile) {
+    .no-mobile{
+        display: none;
+    }
+}
+
+.section__title{
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 92px;
+    font-size: 40px;
+
+    @media (max-width: $pc) {
+        font-size: 36px;
+        margin-bottom: 88px;
+    }
+
+    @media (max-width: $mobile) {
+        font-size: 20px;
+        margin-bottom: 40px;
+    }
+}
+
+.btn{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    border-radius: 100px;
+    position: relative;
+}
+
+.btn-icon{
+    width: 440px;
+    height: 76px;
+    font-size: rem(20);
+    line-height: 130%;
+    font-weight: 800;
+
+    svg{
+        margin-right: 10px;
+    }
+    svg *{
+        transition: all 0.3s ease;
+    }
+}
+
+.btn-header{
+    width: 242px;
+    height: 53px;
+    font-size: rem(16);
+    line-height: 130%;
+    font-weight: 700;
+}
+
+.btn-white{
+    background: $white;
+    color: $dark;
+    transition: all 0.3s ease;
+
+    &:hover{
+        color: $blue;
+
+        svg *{
+            fill: $blue;
+        }
+    }
+}
+
+.btn-blue{
+    background: $blue;
+    color: $white;
+    transition: all 0.3s ease;
+
+    svg *{
+        fill: $white;
+    }
+
+    &:hover{
+        background: $hoverBlue;
+
+        svg *{
+            fill: $white;
+        }
+    }
+}
+
+.video__box {
+    margin-bottom: 12px;
+    position: relative;
+
+    .video{
+        display: block;
+        position: relative;
+        padding-bottom: 56.25%;
+        border-radius: 10px;
+        height: 0;
+        overflow: hidden;
+
+        iframe{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-width: 0;
+            outline-width: 0;
+        }
+    }
+
+    span.name{
+        font-size: 16px;
+        padding: 8px 19.5px 12px;
+        left: 16px;
+        bottom: 16px;
+        z-index: 99;
+    }
+    .video__media{
+        width: 100%;
+        height: auto;
+    }
+
+    .video__button{
+        width: 180px;
+        height: 180px;
+        background: url("@img/video-default.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 100%;
+
+        &:hover{
+            background: url("@img/video-hover.svg");
+        }
+        &:active{
+            background: url("@img/video-pressed.svg");
+        }
+    }
+
+    @media (max-width: $tablet) {
+        .video__button{
+            width: 100px;
+            height: 100px;
+        }
+    }
+    @media (max-width: $mobile) {
+
+    }
+}

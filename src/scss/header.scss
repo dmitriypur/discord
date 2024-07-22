@@ -1,0 +1,176 @@
+.header {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	transition: all 0.3s ease;
+	border-bottom: 1px solid transparent;
+
+	&__wrap {
+		max-width: 1740px;
+		padding: 33px 16px;
+		margin: 0 auto;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		@media (max-width: $pc) {
+			max-width: 1268px;
+		}
+		@media (max-width: $tablet) {
+			padding: 16px 44px;
+		}
+	
+		@media (max-width: $mobile) {
+			padding: 18px 16px;
+		}
+	}
+	&__mobile{
+		position: fixed;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+		top: 0;
+		right: -100%;
+		background: $white;
+		height: 100%;
+		z-index: 999;
+		transition: right 0.3s ease-in;
+
+		&-logo{
+			align-self:flex-start;
+		}
+
+		.top{
+			padding: 33px 16px;
+			display: flex;
+			justify-content: space-between;
+			width: 100%;
+		}
+
+		&.open{
+			right: 0;
+		}
+
+		.close{
+			svg{
+				pointer-events: none;
+			}
+		}
+		@media (max-width: $tablet) {
+			.top{
+				padding: 16px 44px;
+			}
+		}
+	
+		@media (max-width: $mobile) {
+			.top{
+				padding: 18px 16px;
+			}
+		}
+	}
+	.hamburger{
+		display: none;
+		svg{
+			pointer-events: none;
+		}
+	}
+	
+	.menu {
+		ul{
+			display: flex;
+			align-items: center;
+			li{
+				margin-left: 44px;
+
+				@media (max-width: 1110px) {
+					margin-left: 20px;
+				}
+	
+				a{
+					color: $white;
+					font-weight: 700;
+
+					&:hover{
+						font-weight: 900;
+					}
+				}
+			}
+
+			@media (max-width: $tablet) {
+				flex-direction: column;
+				width: 100%;
+
+				li{
+					margin-left: 0;
+					width: 100%;
+					a{
+						color: $dark;
+						display: block;
+						padding: 12px;
+						width: 100%;
+						text-align: center;
+					}
+				}
+			}
+		}
+		@media (max-width: $tablet) {
+			width: 100%;
+		}
+		
+	}
+
+	
+	.btn-header{
+		margin-left: 20px;
+	}
+
+	@media (max-width: $tablet) {
+		.hamburger{
+			display: block;
+			
+			svg *{
+				stroke: $white;
+			}
+		}
+		.btn-header{
+			margin-left: 0;
+			margin-top: 32px;
+		}
+	}
+	@media (max-width: $mobile) {
+		.btn-header{
+			width: 95%;
+			max-width: 360px;
+		}
+	}
+
+	&._header-scroll{
+		position: fixed;
+		background: $white;
+		z-index: 999;
+
+		.logo svg *{
+			fill: $dark;
+		}
+
+		.menu {
+			ul{
+				li{
+					a{
+						color: $dark;
+					}
+				}
+			}
+		}
+
+		@media (max-width: $tablet) {
+			.hamburger{
+				svg *{
+					stroke: $dark;
+				}
+			}
+		}
+	}
+}
