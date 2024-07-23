@@ -51,7 +51,18 @@ function initSliders() {
 			autoplay: {
 				delay: 0,
 				disableOnInteraction: false // или сделать так, чтобы восстанавливался autoplay после взаимодействия
-			}
+			},
+			breakpoints: {
+				320: {
+					spaceBetween: 32,
+				},
+				768: {
+					spaceBetween: 56,
+				},
+				1024: {
+					spaceBetween: 90,
+				}
+			},
 		});
 	}
 }

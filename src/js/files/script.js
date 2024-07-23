@@ -23,8 +23,6 @@ let video = document.querySelector('.video');
 var iframeVideo = document.querySelectorAll('iframe')
 Array.from(iframeVideo).forEach(function(elem){
 
-    console.log(elem);
-
 	let src = elem.getAttribute('src')
 
 	var parentDiv = elem.parentNode;
@@ -105,7 +103,7 @@ findVideos();
 
 
 // animate
-if (window.innerWidth > 767.98){
+// if (window.innerWidth > 767.98){
     let users = document.querySelectorAll('.childs li');
     let i = 0;
     setInterval(function(){ 
@@ -180,4 +178,4 @@ if (window.innerWidth > 767.98){
     })
     
     // document.querySelector('.title__replace').
-}
+// }

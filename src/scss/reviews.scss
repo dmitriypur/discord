@@ -1,14 +1,12 @@
 .reviews {
-    padding: 148px 0;
-    background: #E9EBF1 url('@img/reviews-bg.svg') no-repeat center bottom/100%;
+    display: none;
 
-    @media (max-width: $tablet) {
-        padding: 80px 0;
+    @media (min-width: $tablet) {
+        padding: 148px 0;
+        background: #E9EBF1 url('@img/reviews-bg.svg') no-repeat center bottom/100%;
+        display: block;
     }
 
-    @media (max-width: $mobile) {
-        display: none;
-    }
     .swiper-wrapper {
         padding: 40px 0;
     }
