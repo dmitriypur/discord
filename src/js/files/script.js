@@ -18,10 +18,10 @@ document.addEventListener('click', e => {
 })
 
 
-let video = document.querySelector('.video');
-
 var iframeVideo = document.querySelectorAll('iframe')
-Array.from(iframeVideo).forEach(function(elem){
+Array.from(iframeVideo).forEach(function(elem, i){
+
+    console.log(i);
 
 	let src = elem.getAttribute('src')
 
@@ -49,7 +49,7 @@ Array.from(iframeVideo).forEach(function(elem){
 
 function findVideos() {
     let videos = document.querySelectorAll('.video');
- 
+
     for (let i = 0; i < videos.length; i++) {
         setupVideo(videos[i]);
     }
@@ -93,7 +93,7 @@ function findVideos() {
  }
  
  function generateURL(id) {
-    let query = '?rel=0&showinfo=0&autoplay=1&controls=0';
+    let query = '?rel=0&showinfo=0&autoplay=1&mute=1&controls=1';
  
     return 'https://www.youtube.com/embed/' + id + query;
  }
@@ -179,3 +179,17 @@ findVideos();
     
     // document.querySelector('.title__replace').
 // }
+
+window.addEventListener('scroll', function(e){
+    let div = document.querySelector('.horizontal');
+    let topOffset = div.getBoundingClientRect().top;
+
+    if(topOffset < 700){
+        let video = document.querySelector('.video');
+        let frame = video.querySelector('iframe')
+
+        if(frame === null){
+            video.click();
+        }
+    }
+})

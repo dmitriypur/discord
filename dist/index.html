@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Главная</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20240723155555">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header" data-scroll="120" data-scroll-show="100">
+			<div class="header__wrap">
+				<div class="logo">
+					<a href="#">
+						<svg width="131" height="36" viewBox="0 0 131 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M27.129 7.09999C25.0429 6.11667 22.8274 5.4 20.5149 5C20.2238 5.51667 19.9004 6.21666 19.674 6.76666C17.2143 6.39999 14.7725 6.39999 12.3467 6.76666C12.1203 6.21666 11.7807 5.51667 11.5058 5C9.17716 5.4 6.96169 6.11667 4.89014 7.09999C0.701768 13.4666 -0.430231 19.6833 0.135767 25.8166C2.91723 27.8999 5.6017 29.1666 8.23925 30C8.88611 29.1 9.46828 28.1332 9.9696 27.1166C9.01548 26.75 8.10989 26.2999 7.23663 25.7666C7.46303 25.6 7.68944 25.4167 7.89967 25.2333C13.1715 27.7167 18.8816 27.7167 24.0888 25.2333C24.3152 25.4167 24.5254 25.6 24.7518 25.7666C23.8785 26.2999 22.973 26.75 22.0188 27.1166C22.5202 28.1332 23.1024 29.1 23.7491 30C26.3851 29.1666 29.0857 27.8999 31.8526 25.8166C32.5479 18.7167 30.7514 12.55 27.129 7.09999ZM10.6973 22.0333C9.11249 22.0333 7.81878 20.55 7.81878 18.7333C7.81878 16.9167 9.08014 15.4333 10.6973 15.4333C12.2982 15.4333 13.6081 16.9167 13.5757 18.7333C13.5757 20.55 12.2982 22.0333 10.6973 22.0333ZM21.3235 22.0333C19.7387 22.0333 18.4433 20.55 18.4433 18.7333C18.4433 16.9167 19.7063 15.4333 21.3235 15.4333C22.9245 15.4333 24.2343 16.9167 24.202 18.7333C24.202 20.55 22.9406 22.0333 21.3235 22.0333Z" fill="white" />
+							<path d="M44 10H51.108C52.8134 10 54.2681 10.2726 55.4553 10.8178C56.6424 11.363 57.5286 12.1128 58.1139 13.0839C58.699 14.0551 59 15.1625 59 16.4234C59 17.65 58.6991 18.7576 58.0804 19.7627C57.4617 20.751 56.5255 21.5517 55.2714 22.131C54.0174 22.7103 52.4623 23 50.6063 23H44V10ZM50.5227 19.6946C51.6764 19.6946 52.5626 19.4049 53.1813 18.8087C53.8 18.2294 54.1177 17.4115 54.1177 16.4063C54.1177 15.4692 53.8334 14.7195 53.2816 14.1573C52.7298 13.595 51.8939 13.3054 50.7735 13.3054H48.5497V19.6946H50.5227Z" fill="white" />
+							<path d="M69.5988 22.601C68.6344 22.3615 67.7682 22.0102 67 21.5312V18.6415C67.5884 19.0885 68.3566 19.4398 69.3373 19.7272C70.3179 20.0146 71.266 20.1582 72.1813 20.1582C72.6062 20.1582 72.9331 20.1103 73.1456 19.9986C73.3581 19.8868 73.4725 19.7591 73.4725 19.5994C73.4725 19.4238 73.4071 19.2801 73.2927 19.1683C73.1783 19.0566 72.9494 18.9608 72.6062 18.865L70.465 18.4021C69.2392 18.1307 68.3729 17.7315 67.8499 17.2525C67.3269 16.7735 67.0817 16.119 67.0817 15.3207C67.0817 14.6502 67.3106 14.0595 67.7518 13.5646C68.2095 13.0696 68.8469 12.6864 69.6806 12.415C70.5141 12.1437 71.4785 12 72.6062 12C73.6033 12 74.5185 12.0958 75.3521 12.3193C76.1856 12.5268 76.8722 12.7982 77.4116 13.1175V15.8476C76.8558 15.5283 76.2021 15.2728 75.4829 15.0812C74.7473 14.8897 73.9956 14.7939 73.2273 14.7939C72.1158 14.7939 71.5602 14.9854 71.5602 15.3527C71.5602 15.5283 71.6419 15.656 71.8217 15.7518C72.0015 15.8476 72.312 15.9274 72.7696 16.0232L74.5512 16.3426C75.7117 16.5341 76.5779 16.8853 77.15 17.3803C77.7221 17.8752 78 18.5936 78 19.5675C78 20.6213 77.526 21.4674 76.5779 22.0741C75.63 22.6967 74.2897 23 72.5572 23C71.5438 22.9681 70.5631 22.8403 69.5988 22.601Z" fill="white" />
+							<path d="M81.9842 22.2645C81 21.7688 80.2382 21.1134 79.7461 20.282C79.2381 19.4505 79 18.5073 79 17.452C79 16.4128 79.254 15.4694 79.7778 14.6541C80.3016 13.8227 81.0635 13.1831 82.0635 12.7035C83.0635 12.2398 84.2699 12 85.6667 12C87.3968 12 88.8254 12.3677 89.9683 13.1031V16.2849C89.5714 16.0131 89.0953 15.7732 88.5556 15.6133C88.0159 15.4375 87.4444 15.3575 86.8413 15.3575C85.7619 15.3575 84.9366 15.5494 84.3175 15.9491C83.7143 16.3488 83.4127 16.8605 83.4127 17.4999C83.4127 18.1235 83.6984 18.6352 84.3016 19.0349C84.8889 19.4345 85.746 19.6424 86.8572 19.6424C87.4286 19.6424 88 19.5624 88.5556 19.3866C89.1112 19.2107 89.6032 19.0189 90 18.7631V21.8488C88.7301 22.6163 87.2539 23 85.5873 23C84.1746 23 82.9841 22.7442 81.9842 22.2645Z" fill="white" />
+							<path d="M95.268 22.2645C94.2067 21.7688 93.3982 21.1134 92.8423 20.266C92.2864 19.4185 92 18.4753 92 17.42C92 16.3808 92.2864 15.4375 92.8423 14.6221C93.3982 13.8067 94.2067 13.1671 95.2512 12.7035C96.2955 12.2398 97.5589 12 99.0092 12C100.458 12 101.721 12.2238 102.766 12.7035C103.81 13.1671 104.619 13.8067 105.175 14.6221C105.73 15.4375 106 16.3648 106 17.42C106 18.4593 105.73 19.4185 105.175 20.266C104.619 21.1134 103.827 21.7848 102.766 22.2645C101.704 22.7442 100.458 23 99.0092 23C97.5757 23 96.3292 22.7442 95.268 22.2645ZM100.845 19.1787C101.283 18.7631 101.519 18.1875 101.519 17.4999C101.519 16.7965 101.3 16.2529 100.845 15.8372C100.391 15.4215 99.7842 15.2136 99.0261 15.2136C98.2344 15.2136 97.6262 15.4215 97.1715 15.8372C96.7335 16.2529 96.4977 16.7965 96.4977 17.4999C96.4977 18.2035 96.7167 18.7631 97.1715 19.1787C97.6262 19.6104 98.2344 19.8183 99.0261 19.8183C99.7842 19.8023 100.407 19.5944 100.845 19.1787Z" fill="white" />
+							<path d="M116 12.4392V16.4101C115.547 16.106 114.964 15.9539 114.252 15.9539C113.313 15.9539 112.584 16.2581 112.083 16.8494C111.58 17.4408 111.321 18.3702 111.321 19.6205V23H107V12.2534H111.241V15.6835C111.468 14.4331 111.856 13.5038 112.374 12.9124C112.892 12.321 113.572 12 114.397 12C115.012 12 115.547 12.1521 116 12.4392Z" fill="white" />
+							<path d="M131 10V22.6456H126.546V20.342C126.161 21.2119 125.594 21.8724 124.827 22.3234C124.058 22.7745 123.106 23 121.972 23C120.971 23 120.087 22.7584 119.336 22.2912C118.585 21.8241 118.002 21.1636 117.602 20.342C117.201 19.5044 117.001 18.57 117.001 17.5391C116.984 16.4597 117.201 15.4932 117.651 14.6394C118.085 13.7857 118.719 13.1252 119.52 12.6419C120.321 12.1586 121.238 11.9169 122.272 11.9169C124.392 11.9169 125.812 12.803 126.546 14.5911V10H131ZM125.878 19.0694C126.328 18.6505 126.562 18.0867 126.562 17.4102C126.562 16.7497 126.345 16.2181 125.894 15.8154C125.445 15.4127 124.844 15.2032 124.091 15.2032C123.34 15.2032 122.739 15.4127 122.289 15.8315C121.838 16.2503 121.622 16.7819 121.622 17.4585C121.622 18.135 121.838 18.6667 122.289 19.0855C122.739 19.5044 123.324 19.7138 124.074 19.7138C124.827 19.7138 125.427 19.5044 125.878 19.0694Z" fill="white" />
+							<path d="M62.5 13C63.8794 13 65 12.1045 65 11C65 9.89536 63.8794 9 62.5 9C61.1186 9 60 9.89536 60 11C60 12.1045 61.1186 13 62.5 13Z" fill="white" />
+							<path d="M65 14C63.4712 14.649 61.5647 14.6666 60 14V23H65V14Z" fill="white" />
+						</svg>
+					</a>
+				</div>
+				<button type="button" class="hamburger">
+					<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M33 11L6 11M33 20.5H6M33 30H6" stroke="#23272A" stroke-width="2" stroke-linecap="round" />
+					</svg>
+				</button>
+				<nav class="menu" data-da=".header__mobile,1024,1">
+					<ul>
+						<li><a href="#" data-goto="#info" class="menu__link">Информация</a></li>
+						<li><a href="#" data-goto="#install" class="menu__link">Как установить</a></li>
+						<li class="no-mobile"><a href="#" data-goto="#faq" class="menu__link">Вопросы</a></li>
+						<li class="no-mobile"><a href="#" data-goto="#reviews" class="menu__link">Отзывы</a></li>
+						<li><a href="#" data-goto="#support" class="menu__link">Поддержка</a></li>
+					</ul>
+				</nav>
+				<button type="button" class="btn btn-blue btn-header" data-da=".header__mobile,1024,2">
+					Установить Discord
+				</button>
+				<div class="header__mobile">
+					<div class="top">
+						<img src="img/logo-h-b.svg" alt="Logo" class="header__mobile-logo">
+						<button type="button" class="close">
+							<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M10 30L30 10M30 30L10 10" stroke="#23272A" stroke-width="2" stroke-linecap="round" />
+							</svg>
+						</button>
+					</div>
+				</div>
+			</div>
+		</header>
+		<section class="hero">
+			<div class="hero__container">
+				<div class="hero__inner">
+					<div class="hero__left">
+						<h1 class="hero__title">
+							<span class="hero__title-top">Групповые чаты</span>
+							Discord
+							<span class="hero__title-bottom">— это новый уровень общения</span>
+						</h1>
+						<p class="hero__subtitle">
+							Удобная платформа для общения, игр и творчества. Присоединяйтесь к миллионам пользователей по всему миру и исследуйте новые возможности онлайн-общения.
+						</p>
+						<button type="button" class="btn btn-icon btn-white">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M11.0625 11.6875H22V2L11.0625 3.57257V11.6875Z" fill="#23272A" />
+								<path d="M10.4375 11.6875V3.5625L2 4.78064V11.6875H10.4375Z" fill="#23272A" />
+								<path d="M10.4375 12.3125H2V19.2647L10.4375 20.4375V12.3125Z" fill="#23272A" />
+								<path d="M11.0625 12.3125V20.4672L22 22V12.3125H11.0625Z" fill="#23272A" />
+							</svg>
+							Скачать для Windows
+						</button>
+						<p class="hero__text">Совместим с Windows 7 и выше</p>
+					</div>
+					<div class="hero__right">
+						<img src="img/hero-img.svg" alt="">
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="info" id="info">
+			<div class="info__container">
+				<h2 class="section__title">Информация о программе</h2>
+				<div class="info__row">
+					<div class="info__col">
+						<div class="info__col-header">
+							<h3>Место для общения</h3>
+							<p>Создавайте чаты и приглашайте друзей для общения на любые темы.</p>
+						</div>
+
+						<div class="card">
+							<div class="card__inner">
+								<div class="card__inner-left">
+									<div class="discord grey__round">
+										<img src="img/icons/discord.svg" alt="">
+									</div>
+									<ul class="chat">
+										<li class="chat__item grey__round">
+											<picture><source srcset="img/chat-1.webp" type="image/webp"><img src="img/chat-1.png" alt=""></picture>
+										</li>
+										<li class="chat__item grey__round">
+											<picture><source srcset="img/chat-2.webp" type="image/webp"><img src="img/chat-2.png" alt=""></picture>
+										</li>
+										<li class="chat__item grey__round add">
+											<img src="img/icons/add.svg" alt="">
+										</li>
+										<li class="chat__item grey__round server">
+											<img src="img/icons/server.svg" alt="">
+										</li>
+									</ul>
+								</div>
+								<div class="card__inner-right place">
+									<div class="top">
+										<p>The Crew</p>
+										<img src="img/icons/card-arrow-big.svg" alt="">
+									</div>
+									<div class="chanels">
+										<div class="spollers">
+											<div class="spollers__item">
+												<button type="button" class="spollers__title _spoller-active">
+													Text channels
+												</button>
+												<div class="spollers__body">
+													<ul class="text__channels">
+														<li>gaming</li>
+														<li class="active">global</li>
+													</ul>
+												</div>
+											</div>
+											<div class="spollers__item">
+												<button type="button" class="spollers__title _spoller-active">
+													Voice channels
+												</button>
+												<div class="spollers__body">
+													<ul class="voice__channels">
+														<li>
+															<div>
+																<p>vc-general</p>
+																<div class="buttons">
+																	<button type="button">
+																		<img src="img/icons/comment.svg" alt="">
+																	</button>
+																	<button type="button">
+																		<img src="img/icons/add-user.svg" alt="">
+																	</button>
+																</div>
+
+															</div>
+															<ul class="childs">
+																<li>
+																	<img src="img/users/user-1.svg" alt="">
+																	<p>Smirnov Alex</p>
+																</li>
+																<li>
+																	<img src="img/users/user-2.svg" alt="">
+																	<p>Korchagina Svetlana</p>
+																</li>
+																<li>
+																	<img src="img/users/user-3.svg" alt="">
+																	<p>Kirill</p>
+																</li>
+															</ul>
+														</li>
+													</ul>
+
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="info__col">
+						<div class="info__col-header">
+							<h3>Деловое общение</h3>
+							<p>Используйте платформу для общения с&nbsp;командой и&nbsp;обсуждения рабочих вопросов.</p>
+						</div>
+						<div class="card">
+							<div class="card__inner">
+								<div class="card__inner-right business">
+									<div class="top">
+										<p><span>#</span>global</p>
+										<img src="img/icons/Icon_search.svg" alt="">
+									</div>
+									<ul class="business__chat">
+										<li class="business__chat-item">
+											<ul class="icons">
+												<li><img src="img/icons/Icon_smile.svg" alt=""></li>
+												<li><img src="img/icons/Icon_arrow-back.svg" alt=""></li>
+												<li><img src="img/icons/Icon_more.svg" alt=""></li>
+												<li><img src="img/icons/Icon_threads.svg" alt=""></li>
+											</ul>
+											<div class="avatar">
+												<img src="img/users/user-1.svg" alt="">
+											</div>
+											<div class="content">
+												<div class="content__top">
+													<p class="name">Kirill</p>
+													<p class="date">Сегодня, в 12:50</p>
+												</div>
+												<p class="message">У кого‑нибудь есть записи по вчерашнему семинару?</p>
+											</div>
+										</li>
+										<li class="business__chat-item">
+											<ul class="icons">
+												<li><img src="img/icons/Icon_smile.svg" alt=""></li>
+												<li><img src="img/icons/Icon_arrow-back.svg" alt=""></li>
+												<li><img src="img/icons/Icon_more.svg" alt=""></li>
+												<li><img src="img/icons/Icon_threads.svg" alt=""></li>
+											</ul>
+											<div class="avatar">
+												<img src="img/users/user-2.svg" alt="">
+											</div>
+											<div class="content">
+												<div class="content__top">
+													<p class="name">Victoria</p>
+													<p class="date">Сегодня, в 12:55</p>
+												</div>
+												<p class="message">Мне тоже нужны</p>
+											</div>
+										</li>
+										<li class="business__chat-item">
+											<ul class="icons">
+												<li><img src="img/icons/Icon_smile.svg" alt=""></li>
+												<li><img src="img/icons/Icon_arrow-back.svg" alt=""></li>
+												<li><img src="img/icons/Icon_more.svg" alt=""></li>
+												<li><img src="img/icons/Icon_threads.svg" alt=""></li>
+											</ul>
+											<div class="avatar">
+												<img src="img/users/user-3.svg" alt="">
+											</div>
+											<div class="content">
+												<div class="content__top">
+													<p class="name">Smirnov Alex</p>
+													<p class="date">Сегодня, в 12:57</p>
+												</div>
+												<p class="message">Пришлите и мне пожалуйста</p>
+											</div>
+										</li>
+										<li class="business__chat-item">
+											<ul class="icons">
+												<li><img src="img/icons/Icon_smile.svg" alt=""></li>
+												<li><img src="img/icons/Icon_arrow-back.svg" alt=""></li>
+												<li><img src="img/icons/Icon_more.svg" alt=""></li>
+												<li><img src="img/icons/Icon_threads.svg" alt=""></li>
+											</ul>
+											<div class="avatar">
+												<img src="img/users/user-4.svg" alt="">
+											</div>
+											<div class="content">
+												<div class="content__top">
+													<p class="name">Korchagina Svetlana</p>
+													<p class="date">Сегодня, в 13:10</p>
+												</div>
+												<p class="message">У меня есть, смогу прислать ближе к вечеру</p>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="info__col horizontal">
+						<div class="info__col-header">
+							<h3>Групповые игры</h3>
+							<p>Организуйте и участвуйте в игровых сессиях с&nbsp;друзьями и&nbsp;сообществами.</p>
+						</div>
+						<div class="card">
+							<div class="card__photo">
+								<picture><source srcset="img/gamer.webp" type="image/webp"><img src="img/gamer.jpg" alt=""></picture>
+								<span class="name">Oleg</span>
+							</div>
+							<ul class="thumbnails">
+								<li class="item">
+									<img src="img/users/user-1.svg" alt="" class="avatar">
+									<span class="name">Victoria</span>
+								</li>
+								<li class="item active">
+									<div class="badge">Live</div>
+
+									<div class="video__box">
+										<iframe width="560" height="315" src="https://www.youtube.com/embed/wtdLpWobBww?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+									</div>
+									<img src="img/icons/Icon_cursor.svg" alt="" class="cursor">
+									<span class="name">Oleg</span>
+								</li>
+								<li class="item">
+									<img src="img/users/user-2.svg" alt="" class="avatar">
+									<span class="name">Kirill</span>
+								</li>
+							</ul>
+						</div>
+						<img src="img/blue-creature.svg" alt="" class="blue-creature">
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="functions">
+			<div class="functions__wrap">
+				<h2 class="section__title">Основные функции и преимущества</h2>
+				<ul class="functions__list">
+					<li class="functions__item">
+						<h3 class="functions__item-title">Группы и сообщества</h3>
+						<ul class="functions__item-content">
+							<li>Создавайте чаты и группы для обсуждения проектов, игр, творчества и работы.</li>
+							<li>Делитесь идеями, файлами и документами, организуйте беседы по интересам.</li>
+						</ul>
+						<img src="img/icons/Icon_team.svg" alt="" class="functions__item-icon">
+					</li>
+					<li class="functions__item">
+						<h3 class="functions__item-title title__replace">Безопасность и конфиденциальность</h3>
+						<ul class="functions__item-content">
+							<li>Наслаждайтесь безопасной средой для общения, творчества и работы.</li>
+							<li>Используйте шифрование и управление доступом для защиты ваших данных.</li>
+						</ul>
+						<img src="img/icons/Icon_shield.svg" alt="" class="functions__item-icon">
+					</li>
+					<li class="functions__item item__hidden">
+						<img src="img/butterfly.svg" alt="butterfly">
+					</li>
+					<li class="functions__item">
+						<h3 class="functions__item-title">Совместная работа и управление проектами</h3>
+						<ul class="functions__item-content">
+							<li>Используйте инструменты для совместного редактирования документов и управления задачами.</li>
+							<li>Назначайте задачи, отслеживайте их выполнение и делитесь статусом проекта в реальном времени.</li>
+						</ul>
+						<img src="img/icons/Icon_edit.svg" alt="" class="functions__item-icon">
+					</li>
+					<li class="functions__item">
+						<h3 class="functions__item-title">Голосовые и видеозвонки</h3>
+						<ul class="functions__item-content">
+							<li>Проводите голосовые и видеоконференции для общения, обсуждения рабочих вопросов и игровых сессий.</li>
+							<li>Организуйте виртуальные встречи, брейнштормы и стримы.</li>
+						</ul>
+						<img src="img/icons/Icon_mic.svg" alt="" class="functions__item-icon">
+					</li>
+					<li class="functions__item">
+						<h3 class="functions__item-title">Уведомления и напоминания</h3>
+						<ul class="functions__item-content">
+							<li>Настраивайте уведомления для важных сообщений, игровых событий и рабочих задач.</li>
+							<li>Используйте напоминания для своевременного выполнения задач и соблюдения сроков.</li>
+						</ul>
+						<img src="img/icons/Icon_notification.svg" alt="" class="functions__item-icon">
+					</li>
+					<li class="functions__item item__hidden">
+
+					</li>
+					<li class="functions__item">
+						<h3 class="functions__item-title">Обмен файлами и ресурсами</h3>
+						<ul class="functions__item-content">
+							<li>Легко делитесь файлами, изображениями и документами с коллегами, друзьями и командой.</li>
+							<li>Организуйте ресурсы в общих папках для удобного доступа.</li>
+						</ul>
+						<img src="img/icons/Icon_share-1.svg" alt="" class="functions__item-icon">
+					</li>
+					<li class="functions__item">
+						<h3 class="functions__item-title">Интеграции с сервисами</h3>
+						<ul class="functions__item-content">
+							<li>Интегрируйте платформу с популярными инструментами и сервисами, такими как Google Drive, Trello и игровые платформы.</li>
+							<li>Повышайте продуктивность, используя все необходимые инструменты в одном месте.</li>
+						</ul>
+						<img src="img/icons/Icon_community.svg" alt="" class="functions__item-icon">
+					</li>
+				</ul>
+				<button type="button" class="btn btn-icon btn-blue">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M11.0625 11.6875H22V2L11.0625 3.57257V11.6875Z" fill="#23272A" />
+						<path d="M10.4375 11.6875V3.5625L2 4.78064V11.6875H10.4375Z" fill="#23272A" />
+						<path d="M10.4375 12.3125H2V19.2647L10.4375 20.4375V12.3125Z" fill="#23272A" />
+						<path d="M11.0625 12.3125V20.4672L22 22V12.3125H11.0625Z" fill="#23272A" />
+					</svg>
+					Скачать для Windows
+				</button>
+				<img src="img/girl.svg" alt="butterfly" class="girl-pic">
+			</div>
+		</section>
+
+		<section class="install" id="support">
+			<h2 class="section__title">Доступно на всех ваших устройствах</h2>
+			<div class="install__slider swiper-devices">
+				<div class="install__wrapper swiper-wrapper">
+					<div class="install__slide swiper-slide">
+						<img src="img/devices/logo_android.svg" alt="">
+					</div>
+					<div class="install__slide swiper-slide">
+						<img src="img/devices/logo_ios.svg" alt="">
+					</div>
+					<div class="install__slide swiper-slide">
+						<img src="img/devices/logo_linux.svg" alt="">
+					</div>
+					<div class="install__slide swiper-slide">
+						<img src="img/devices/logo_macos.svg" alt="">
+					</div>
+					<div class="install__slide swiper-slide">
+						<img src="img/devices/logo_windows.svg" alt="">
+					</div>
+					<div class="install__slide swiper-slide">
+						<img src="img/devices/logo_playstation-4.svg" alt="">
+					</div>
+					<div class="install__slide swiper-slide">
+						<img src="img/devices/logo_playstation-5.svg" alt="">
+					</div>
+					<div class="install__slide swiper-slide">
+						<img src="img/devices/logo_xbox-one.svg" alt="">
+					</div>
+					<div class="install__slide swiper-slide">
+						<img src="img/devices/logo_xbox-xs.svg" alt="">
+					</div>
+					<div class="install__slide swiper-slide">
+						<img src="img/devices/logo_android.svg" alt="">
+					</div>
+					<div class="install__slide swiper-slide">
+						<img src="img/devices/logo_ios.svg" alt="">
+					</div>
+					<div class="install__slide swiper-slide">
+						<img src="img/devices/logo_linux.svg" alt="">
+					</div>
+					<div class="install__slide swiper-slide">
+						<img src="img/devices/logo_macos.svg" alt="">
+					</div>
+					<div class="install__slide swiper-slide">
+						<img src="img/devices/logo_windows.svg" alt="">
+					</div>
+					<div class="install__slide swiper-slide">
+						<img src="img/devices/logo_playstation-4.svg" alt="">
+					</div>
+					<div class="install__slide swiper-slide">
+						<img src="img/devices/logo_playstation-5.svg" alt="">
+					</div>
+					<div class="install__slide swiper-slide">
+						<img src="img/devices/logo_xbox-one.svg" alt="">
+					</div>
+					<div class="install__slide swiper-slide">
+						<img src="img/devices/logo_xbox-xs.svg" alt="">
+					</div>
+
+				</div>
+			</div>
+			<h2 class="section__title" id="install">Лёгкая установка за несколько шагов</h2>
+			<div class="install__video">
+				<div class="video__box">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/wtdLpWobBww?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+					<span class="name">Oleg</span>
+				</div>
+			</div>
+		</section>
+
+		<section class="faq" id="faq">
+			<div class="faq__container">
+				<h2 class="section__title">Часто задаваемые вопросы</h2>
+
+				<div data-spollers data-one-spoller class="spollers">
+					<div class="faq__row">
+						<div class="faq__col">
+							<div class="spollers__item with__border">
+								<button type="button" data-spoller class="spollers__title">Как установить приложение на мой компьютер?</button>
+								<div class="spollers__body">Зайдите на наш сайт, выберите нужную платформу (Windows, macOS или Linux) и скачайте установочный файл. Затем следуйте инструкциям по установке.</div>
+							</div>
+							<div class="spollers__item with__border">
+								<button type="button" data-spoller class="spollers__title">Могу ли я использовать приложение на нескольких устройствах одновременно?</button>
+								<div class="spollers__body">Зайдите на наш сайт, выберите нужную платформу (Windows, macOS или Linux) и скачайте установочный файл. Затем следуйте инструкциям по установке.</div>
+							</div>
+							<div class="spollers__item with__border">
+								<button type="button" data-spoller class="spollers__title">Требуется ли мне оплачивать приложение?</button>
+								<div class="spollers__body">Зайдите на наш сайт, выберите нужную платформу (Windows, macOS или Linux) и скачайте установочный файл. Затем следуйте инструкциям по установке.</div>
+							</div>
+							<div class="spollers__item">
+								<button type="button" data-spoller class="spollers__title">Поддерживает ли ваше приложение интеграцию с другими сервисами?</button>
+								<div class="spollers__body">Зайдите на наш сайт, выберите нужную платформу (Windows, macOS или Linux) и скачайте установочный файл. Затем следуйте инструкциям по установке.</div>
+							</div>
+						</div>
+						<div class="faq__col">
+							<div class="spollers__item with__border">
+								<button type="button" data-spoller class="spollers__title">Как обновить приложение до последней версии?</button>
+								<div class="spollers__body">Зайдите на наш сайт, выберите нужную платформу (Windows, macOS или Linux) и скачайте установочный файл. Затем следуйте инструкциям по установке.</div>
+							</div>
+							<div class="spollers__item with__border">
+								<button type="button" data-spoller class="spollers__title">Могу ли я настроить уведомления в приложении?</button>
+								<div class="spollers__body">Зайдите на наш сайт, выберите нужную платформу (Windows, macOS или Linux) и скачайте установочный файл. Затем следуйте инструкциям по установке.</div>
+							</div>
+							<div class="spollers__item with__border">
+								<button type="button" data-spoller class="spollers__title">Как защитить свои данные в приложении?</button>
+								<div class="spollers__body">Зайдите на наш сайт, выберите нужную платформу (Windows, macOS или Linux) и скачайте установочный файл. Затем следуйте инструкциям по установке.</div>
+							</div>
+							<div class="spollers__item with__border">
+								<button type="button" data-spoller class="spollers__title">Есть ли у вас мобильная версия приложения?</button>
+								<div class="spollers__body">Зайдите на наш сайт, выберите нужную платформу (Windows, macOS или Linux) и скачайте установочный файл. Затем следуйте инструкциям по установке.</div>
+							</div>
+							<div class="spollers__item">
+								<button type="button" data-spoller class="spollers__title">Как получить помощь по работе с приложением?</button>
+								<div class="spollers__body">Зайдите на наш сайт, выберите нужную платформу (Windows, macOS или Linux) и скачайте установочный файл. Затем следуйте инструкциям по установке.</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+
+		<section class="reviews" id="reviews">
+			<div class="reviews__container">
+				<h2 class="section__title">Отзывы</h2>
+				<div class="reviews__inner">
+					<div class="reviews__slider swiper">
+						<div class="reviews__wrapper swiper-wrapper">
+							<div class="reviews__slide swiper-slide">
+								<div class="reviews__slide-top">
+									<img src="img/users/user-1.svg" alt="" class="avatar">
+									<p class="name">Кисик</p>
+								</div>
+								<div class="message">Дискорд — это как кот, который подкармливает тебя вдохновением и дружбой. Мур-мур!</div>
+							</div>
+							<div class="reviews__slide swiper-slide">
+								<div class="reviews__slide-top">
+									<img src="img/users/user-1.svg" alt="" class="avatar">
+									<p class="name">Миша</p>
+								</div>
+								<div class="message">Дискорд помогает моей команде работать вместе без проблем. Очень удобно, особенно для проектов и игр.</div>
+							</div>
+							<div class="reviews__slide swiper-slide">
+								<div class="reviews__slide-top">
+									<img src="img/users/user-1.svg" alt="" class="avatar">
+									<p class="name">Вася</p>
+								</div>
+								<div class="message">Когда мой друг спросил, какие у меня планы на выходные, я ответил: «Встречаюсь с моими друзьями на Дискорде». Он подумал, что это новый клуб. Ну, в каком‑то смысле, он и прав XD</div>
+							</div>
+							<div class="reviews__slide swiper-slide">
+								<div class="reviews__slide-top">
+									<img src="img/users/user-1.svg" alt="" class="avatar">
+									<p class="name">Кисик</p>
+								</div>
+								<div class="message">Дискорд — это как кот, который подкармливает тебя вдохновением и дружбой. Мур-мур!</div>
+							</div>
+							<div class="reviews__slide swiper-slide">
+								<div class="reviews__slide-top">
+									<img src="img/users/user-1.svg" alt="" class="avatar">
+									<p class="name">Миша</p>
+								</div>
+								<div class="message">Дискорд помогает моей команде работать вместе без проблем. Очень удобно, особенно для проектов и игр.</div>
+							</div>
+							<div class="reviews__slide swiper-slide">
+								<div class="reviews__slide-top">
+									<img src="img/users/user-1.svg" alt="" class="avatar">
+									<p class="name">Вася</p>
+								</div>
+								<div class="message">Когда мой друг спросил, какие у меня планы на выходные, я ответил: «Встречаюсь с моими друзьями на Дискорде». Он подумал, что это новый клуб. Ну, в каком‑то смысле, он и прав XD</div>
+							</div>
+						</div>
+						<div class="swiper__buttons">
+							<button type="button" class="swiper__button swiper__button-prev">
+								<svg width="8.480469" height="14.839355" viewBox="0 0 8.48047 14.8394" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+									<defs />
+									<path id="Vector" d="M0.75 0.75L7.41 7.41L0.75 14.08" stroke="#23272A" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linecap="round" />
+								</svg>
+							</button>
+							<button type="button" class="swiper__button swiper__button-next">
+								<svg width="8.480469" height="14.839355" viewBox="0 0 8.48047 14.8394" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+									<defs />
+									<path id="Vector" d="M0.75 0.75L7.41 7.41L0.75 14.08" stroke="#23272A" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linecap="round" />
+								</svg>
+							</button>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer class="footer">
+			<div class="footer__wrap">
+				<div class="footer__top">
+					<p class="footer__top-text">
+						<span>Присоединяйтесь</span> к&nbsp;миллионам пользователей по всему миру. <span>Откройте</span> для себя новые возможности взаимодействия с&nbsp;друзьями и&nbsp;коллегами на нашей платформе
+					</p>
+					<button type="button" class="btn btn-icon btn-blue">
+						<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M11.0625 11.6875H22V2L11.0625 3.57257V11.6875Z" fill="#23272A" />
+							<path d="M10.4375 11.6875V3.5625L2 4.78064V11.6875H10.4375Z" fill="#23272A" />
+							<path d="M10.4375 12.3125H2V19.2647L10.4375 20.4375V12.3125Z" fill="#23272A" />
+							<path d="M11.0625 12.3125V20.4672L22 22V12.3125H11.0625Z" fill="#23272A" />
+						</svg>
+						Скачать для Windows
+					</button>
+					<p class="hero__text">Совместим с Windows 7 и выше</p>
+
+					<img src="img/bee.svg" alt="bee" class="bee-img">
+					<img src="img/discord_2.svg" alt="discord" class="discord-img">
+				</div>
+				<div class="footer__inner">
+					<div class="footer__left">
+						<img src="img/logo-f.svg" alt="">
+						<div class="politics" data-da=".footer__inner,1023.98,2">
+							<a href="#">Политика конфиденциальности</a>
+							<p>Все товарные знаки являются собственностью их правообладателей</p>
+						</div>
+
+					</div>
+					<div class="footer__right">
+						<nav class="footer__menu">
+							<a href="#" data-goto="#info">Информация</a>
+							<a href="#" data-goto="#faq">Как установить</a>
+							<a href="#" data-goto="#faq" class="no-mobile">Вопросы</a>
+							<a href="#" data-goto="#reviews" class="no-mobile">Отзывы</a>
+							<a href="#">Поддержка</a>
+						</nav>
+						<div class="footer__social">
+							<a href="#" class="instagram">Instagram</a>
+							<a href="#" class="tiktok">TikTok</a>
+							<a href="#" class="youtube">Youtube</a>
+							<a href="#" class="email" data-da=".footer__menu,768,5">E-mail</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/app.min.js?_v=20240723155555"></script>
+</body>
+
+</html>
